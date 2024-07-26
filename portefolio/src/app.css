@@ -1,0 +1,46 @@
+/* General Layout and typography*/
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color: #FBFEFE;
+}
+
+#root {
+    background-image: url(/assets/night_sky_5000px.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #2E3A69;
+}
+
+/* Page Styling - From  Top to Bottom */
+
+h1 {
+    margin: 0;
+    padding: 1px;
+    font-size: 3rem;
+}
+
+
+/* Animations*/
+
+
+/* Media Queries*/
+
+@media only screen and (max-width:767px) {
+    #root {
+        background-image: url(/assets/night_sky_900px.png);
+    }
+}
