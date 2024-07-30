@@ -22,16 +22,16 @@ const Media = () => {
         return (
             <address className='social-media'>
                 <a target="_blank" className='social-link' href="https://api.whatsapp.com/send/?phone=351969728516&text&type=phone_number&app_absent=0">
-                    <img className='social-img' src="/assets/icons/whatsapp.png" alt="WhatsApp contact" />
+                    <img className='social-img' src="/icons/whatsapp.png" alt="WhatsApp contact" />
                 </a>
                 <a target="_blank" className='social-link' href="https://github.com/MarChurra">
-                    <img className='social-img' src="/assets/icons/github.png" alt="Github link" />
+                    <img className='social-img' src="/icons/github.png" alt="Github link" />
                 </a>
                 <a target="_blank" className='social-link' href="https://www.linkedin.com/in/marcochurra/">
-                    <img className='social-img' src="/assets/icons/linkedin.png" alt="LinkedIn Contact" />
+                    <img className='social-img' src="/icons/linkedin.png" alt="LinkedIn Contact" />
                 </a>
                 <a target="_blank" className='social-link' href="mailto:mchurra@outlook.pt">
-                    <img className='social-img' src="/assets/icons/mail.png" alt="Open a window to send an email directly to me" />
+                    <img className='social-img' src="/icons/mail.png" alt="Open a window to send an email directly to me" />
                 </a>
             </address>
         );

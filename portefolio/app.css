@@ -15,7 +15,7 @@ body,
 }
 
 #root {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/images/sunset_sml.png) center/cover fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/sunset_sml.png) center/cover fixed;
     background-color: #2E3A69;
 }
 
@@ -257,7 +257,7 @@ footer>p {
 /* Media Queries */
 @media only screen and (min-width: 750px) {
     #root {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/images/sunset_lg.png);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/sunset_lg.png);
     }
 
     .home-container>p,
