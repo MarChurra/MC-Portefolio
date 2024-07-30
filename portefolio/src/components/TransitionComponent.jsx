@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import '../app.css';
+import '../../app.css';
 
 function withPageTransition(WrappedComponent) {
     return function PageTransitionWrapper(props) {
