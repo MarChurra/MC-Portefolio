@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './app.css';
-import Layout from './src/components/AppLayout.jsx';
-import About from './src/pages/About.jsx';
-import Home from './src/pages/Home.jsx';
-import Works from './src/pages/Works.jsx';
-import NotFound from './src/pages/NotFound.jsx';
+import Layout from './components/AppLayout';
+import About from './pages/About';
+import Home from './pages/Home';
+import Works from './pages/Works';
+import NotFound from './pages/NotFound';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
@@ -18,8 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="works" element={<Works />} />
         </Route>
         <Route path="*" element={<NotFound />} />
-      </Routes >
-    </BrowserRouter >
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
-
