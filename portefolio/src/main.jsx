@@ -9,15 +9,17 @@ import Works from './pages/Works.jsx'
 import NotFound from './pages/NotFound.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="works" element={<Works />} />
-      </Route>
-      <Route path="*" element={<NotFound />} />
-    </Routes >
-  </BrowserRouter >
+  <React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="works" element={<Works />} />
+        </Route>
+        <Route path="*" element={<NotFound />} />
+      </Routes >
+    </BrowserRouter >
+  </React.StrictMode>
 );
 
