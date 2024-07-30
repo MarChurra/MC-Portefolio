@@ -1,6 +1,6 @@
-import React from 'eact';
-import ReactDOM from 'eact-dom/client';
-import { BrowserRouter, Routes, Route } from 'eact-router-dom';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './app.css';
 import Layout from './src/components/AppLayout.jsx';
 import About from './src/pages/About.jsx';
