@@ -33,12 +33,12 @@ function About() {
           <a href="/Files/CV.pdf" download="CV.pdf" className='download-cv'>
             <img src='/icons/download_icon.png' alt='Download Curriculum Vitae'>
             </img>
-            <figcaption id='cv'>Curriculum Vitae</figcaption>
+            <figcaption id='cv'>Curriculum <br></br> Vitae</figcaption>
           </a>
           <a href="https://mchurradigitalbcard.netlify.app/" target='_blank' className='download-cv'>
             <img src='/icons/download_icon.png' alt='Digital Business Card'>
             </img>
-            <figcaption id='card'>Business Card </figcaption>
+            <figcaption id='card'>Business <br></br> Card </figcaption>
           </a>
         </div>
       </section>

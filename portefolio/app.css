@@ -151,6 +151,12 @@ h2 {
     animation: jump 0.5s ease-in-out forwards;
 }
 
+a > figcaption {
+    display: inline;
+    text-align: center;
+    line-height: 1.15;
+}
+
 /* Works */
 .works-container {
     width: 100%;
