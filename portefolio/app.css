@@ -50,17 +50,18 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .social-link,
 .social-img {
     cursor: pointer;
-    width: 35px;
-    margin-right: 1.75em;
+    width: 65px;
+    padding-right: 1.75em;
 }
 
-.social-link {
-    display: inline-block;
+.social-link:last-of-type, .social-img:last-of-type {
+    padding-right: none;
 }
 
 .social-img {
@@ -74,12 +75,12 @@ h2 {
 
 /* Navigation Bar */
 .navigation-bar {
-    margin: 1.5em auto;
+    margin: 2em auto 0;
 }
 
 .nav-links,
 .link-button {
-    margin: 0 0.75em;
+    padding: 0.9em;
     font-size: 1.25rem;
     text-underline-offset: 5px;
     color: #FBFEFE;
@@ -132,13 +133,13 @@ h2 {
 
 .download-cv {
     text-align: center;
+    width: 100%;
 }
 
 .download-cv,
 .download-cv>img {
     width: 30px;
-    height: 30px;
-    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
     color: #F5E3E0;
     text-decoration: none;
 }
@@ -257,12 +258,9 @@ footer>p {
     .home-container>p,
     .link-button,
     .about-container,
-    .not-found-container {
-        font-size: 1.25rem;
-    }
-
+    .not-found-container,
     .nav-links {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 
     .home-container>h1 {
@@ -285,33 +283,53 @@ footer>p {
 
     .social-link,
     .social-img {
-        width: 40px;
-        height: auto;
+        width: 80px;
     }
 
     .social-link {
-        margin-bottom: 1.75em;
+        padding-bottom: 1.75em;
     }
 
     .home-container>h1 {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
     }
 
     .home-container>p {
-        font-size: 1.2rem;
-        width: 50%;
+        font-size: 1.5rem;
+        width: 60%;
     }
 }
 
-.about-container {
-    padding-right: 3em;
+.about-container, .works-container {
+    padding: 0 2em;
 }
 
 .project-element {
 max-width: 450px;
 }
 
+.arrow-icon {
+    width: 55px;
+}
+
+.download-cv {
+    width: 50px;
+}
+
+#card {
+    padding-right: 1em;
+}
+
+.download-cv img {
+    width: 50px;
+}
+
+footer {
+    font-size: 1.5rem;
+}
+
 @media only screen and (min-width: 1024px) {
+
     .works-container {
         gap: 50px;
         padding: 50px;
