@@ -52,28 +52,26 @@ h2 {
     align-items: center;
 }
 
-.social-link,
-.social-img {
-    cursor: pointer;
-    width: 65px;
-    height: auto;
-    padding-right: 2em;
-    object-fit: cover;
+.social-media:first-child {
+    margin-left: none;
+}
+
+.social-media:last-child {
+    margin-right: none;
 }
 
 
-.social-link:last-of-type,
-.social-img:last-of-type {
-    padding-right: none;
+.social-link,
+.social-img {
+    cursor: pointer;
+    width: 40px;
+    margin: 0 1em;
+    object-fit: cover;
 }
 
 .social-img {
     object-fit: cover;
     filter: invert(1) brightness(2);
-}
-
-.social-img:hover {
-    animation: jump 0.5s ease-in-out forwards;
 }
 
 /* Navigation Bar */
@@ -135,7 +133,6 @@ h2 {
 
 .download-cv {
     text-align: center;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,8 +140,8 @@ h2 {
 
 .download-cv,
 .download-cv>img {
-    width: 30px;
-    padding-bottom: 0.75em;
+    width: 35px;
+    margin-bottom: 0.75em;
     color: #F5E3E0;
     text-decoration: none;
 }
@@ -253,7 +250,7 @@ footer>p {
 }
 
 /* Media Queries */
-@media only screen and (min-width: 725px) {
+@media only screen and (min-width: 750px) {
     #root {
         background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/images/sunset_lg.png);
     }
@@ -276,6 +273,10 @@ footer>p {
         text-underline-offset: 7.5px;
     }
 
+    .social-img:hover {
+    animation: jump 0.5s ease-in-out forwards;
+    }
+
     .social-media {
         flex-direction: column;
         position: fixed;
@@ -286,11 +287,11 @@ footer>p {
 
     .social-link,
     .social-img {
-        width: 80px;
+        width: 50px;
     }
 
     .social-link {
-        padding-bottom: 2em;
+        margin-bottom: 2em;
     }
 
     .home-container>h1 {
@@ -316,13 +317,8 @@ footer>p {
     width: 55px;
 }
 
-.download-cv {
-    width: 55px;
-}
-
-
-.download-cv img {
-    width: 55px;
+.download-cv, .download-cv img {
+    width: 50px;
 }
 
 footer {
@@ -330,6 +326,11 @@ footer {
 }
 
 @media only screen and (min-width: 1024px) {
+
+    .social-link,
+    .social-img {
+        width: 60px;
+    }
 
     .works-container {
         gap: 50px;
