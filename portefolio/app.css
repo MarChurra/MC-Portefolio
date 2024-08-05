@@ -32,7 +32,8 @@ body,
 /* Typography */
 h1,
 p,
-h2 {
+h2,
+figcaption {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     line-height: 1.5;
 }
@@ -50,14 +51,24 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
-.social-media:first-child {
-    margin-left: none;
+.social-media a:first-child {
+    margin-left: 0;
 }
 
-.social-media:last-child {
-    margin-right: none;
+.social-media a:last-child {
+    margin-right: 0;
+}
+
+.social-media a img:first-child {
+    margin-left: 0;
+}
+
+.social-media a img:last-child {
+    margin-right: 0;
 }
 
 
@@ -65,8 +76,9 @@ h2 {
 .social-img {
     cursor: pointer;
     width: 40px;
+    display: inline-block;
+    box-sizing: border-box;
     margin: 0 1em;
-    object-fit: cover;
 }
 
 .social-img {
@@ -139,7 +151,7 @@ h2 {
 }
 
 .download-cv,
-.download-cv>img {
+.download-cv img {
     width: 35px;
     margin-bottom: 0.75em;
     color: #F5E3E0;
@@ -273,12 +285,19 @@ footer>p {
         text-underline-offset: 7.5px;
     }
 
+    .download-cv,
+    .download-cv img {
+        width: 50px;
+    }
+
     .social-img:hover {
-    animation: jump 0.5s ease-in-out forwards;
+        animation: jump 0.5s ease-in-out forwards;
     }
 
     .social-media {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: fixed;
         top: 50vh;
         left: 10vw;
@@ -288,10 +307,13 @@ footer>p {
     .social-link,
     .social-img {
         width: 50px;
+        display: block;
+        object-fit: cover;
+        margin: 0;
     }
 
     .social-link {
-        margin-bottom: 2em;
+        margin-bottom: 2.5em;
     }
 
     .home-container>h1 {
@@ -315,10 +337,6 @@ footer>p {
 
 .arrow-icon {
     width: 55px;
-}
-
-.download-cv, .download-cv img {
-    width: 50px;
 }
 
 footer {
